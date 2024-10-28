@@ -2,6 +2,8 @@
 
 ## Description
 <p align="justify">
+This GitHub repository contains the implementation details, code, and configurations for the paper titled **"Utilizing Hybrid P4 Solutions to Enhance 5G gNB with Data Plane Programmability,"** which has been accepted for presentation at the **15th IFIP Wireless and Mobile Networking Conference (IFIP WMNC 2024)**, to be held in Venice on **November 11-12, 2024**.
+
 This repository provides a hybrid approach for implementing a 5G gNB (gNodeB) by utilizing both a P4-programmable SmartNIC and x86 server for data plane programmability. The solution leverages the low-latency processing of a SmartNIC for simpler packet tasks, while handling complex processing tasks on an x86 server with DPDK, which is better suited for functions like buffering and retransmission. This decomposition enhances throughput, scalability, and efficiency in 5G networks, enabling optimal use of diverse hardware capabilities.
 </p>
 
@@ -10,6 +12,16 @@ Our implementation includes:
 - **DPDK code**: For handling tasks on the x86 server.
 - **Traffic Generator (TG) Code**: To simulate network traffic for testing.
 - **Configuration files**: For setting up the system components and environment.
+
+
+## Authors
+**Mohsen Memarian<sup>1</sup>, Andreas Kassler<sup>1,2</sup>, Karl-Johan Grinnemo<sup>1</sup>, Sándor Laki<sup>3</sup>, Gergely Pongracz<sup>4</sup>, Johan Forsman<sup>5</sup>**
+
+<sup>1</sup>Karlstad University,  
+<sup>2</sup>Deggendorf Institute of Technology,  
+<sup>3</sup>ELTE Eötvös Loránd University,  
+<sup>4</sup>Ericsson Research,  
+<sup>5</sup>TietoEvry
 
 ## Table of Contents
 - [Compile](#compile)
