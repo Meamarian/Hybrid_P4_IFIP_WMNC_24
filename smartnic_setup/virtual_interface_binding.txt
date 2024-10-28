@@ -1,0 +1,19 @@
+load vfs cmd
+
+sudo modprobe igb_uio                                                                                                                                                                   
+ sudo ./dpdk-devbind.py --bind igb_uio 0000:b3:08.0                                                                                                                                      
+ sudo ./dpdk-devbind.py --bind igb_uio 0000:b3:08.1                                                                                                                                      
+ sudo ./dpdk-devbind.py --bind igb_uio 0000:b3:08.2                                                                                                                                      
+ sudo ./dpdk-devbind.py --bind igb_uio 0000:b3:08.3                                                                                                                                      
+ sudo ./dpdk-devbind.py --bind igb_uio 0000:b3:08.4                                                                                                                                      
+ sudo ./dpdk-devbind.py --bind igb_uio 0000:b3:08.5                                                                                                                                      
+ sudo ./dpdk-devbind.py --bind igb_uio 0000:b3:08.6                                                                                                                                      
+ sudo ./dpdk-devbind.py --bind igb_uio 0000:b3:08.7  
+ sudo ./dpdk-devbind.py --bind igb_uio 0000:67:08.0                                                                                                                                      
+ sudo ./dpdk-devbind.py --bind igb_uio 0000:67:08.1                                                                                                                                      
+ sudo ./dpdk-devbind.py --bind igb_uio 0000:67:08.2                                                                                                                                      
+ sudo ./dpdk-devbind.py --bind igb_uio 0000:67:08.3                                                                                                                                      
+ sudo ./dpdk-devbind.py --bind igb_uio 0000:67:08.4                                                                                                                                      
+ sudo ./dpdk-devbind.py --bind igb_uio 0000:67:08.5                                                                                                                                      
+ sudo ./dpdk-devbind.py --bind igb_uio 0000:67:08.6                                                                                                                                      
+ sudo ./dpdk-devbind.py --bind igb_uio 0000:67:08.7   
