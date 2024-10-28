@@ -14,19 +14,19 @@ Our implementation includes:
 - [Run](#run)
 - [Trex_RUN](#trexrun)
 
-## compile
+## Compile
 1. Clone this repository:
    ```bash
    git clone https://github.com/your-repository.git
    cd your-repository
 
-## run
+## Run
 
 
-## compile
+## Test
 1. Run the Trex server
-      ```bash
-~/trex-core/scripts$ sudo ./t-rex-64 -i -c 3 --stl --no-scapy-server --hdrh
+   ```bash
+   ~/trex-core/scripts$ sudo ./t-rex-64 -i -c 3 --stl --no-scapy-server --hdrh
 
-2. Run Trex console
+2. Run the Trex console
    ```bash
