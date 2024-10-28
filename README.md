@@ -10,16 +10,23 @@ Our implementation includes:
 - **Configuration files**: For setting up the system components and environment.
 
 ## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Architecture](#architecture)
-- [Configuration](#configuration)
-- [Contributing](#contributing)
-- [License](#license)
+- [Compile](#compile)
+- [Run](#run)
+- [Trex_RUN](#trexrun)
 
-## Installation
+## compile
 1. Clone this repository:
    ```bash
    git clone https://github.com/your-repository.git
    cd your-repository
 
+## run
+
+
+## compile
+1. Run the Trex server
+      ```bash
+~/trex-core/scripts$ sudo ./t-rex-64 -i -c 3 --stl --no-scapy-server --hdrh
+
+2. Run Trex console
+   ```bash
