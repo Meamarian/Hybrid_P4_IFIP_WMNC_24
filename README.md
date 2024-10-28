@@ -30,3 +30,8 @@ Our implementation includes:
 
 2. Run the Trex console
    ```bash
+   ~/trex-core/scripts$ sudo ./trex-console
+
+3. Run the test_perf_x.py inside the console
+   ```bash
+   trex>start -f stl/test_perf_1.py -p 0 -d 15 -t --downlink percentage-100 --pktsize 128;start -f stl/test_perf_2.py -p 1 -d 15 -t --downlink percentage-100 --pktsize 128; start -f stl/test_perf_3.py.py -p 2 -d 15 -t --downlink percentage-35 --pktsize 128;
