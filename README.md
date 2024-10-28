@@ -22,7 +22,6 @@ Our implementation includes:
 2. Go to the dpdk app directory
    ```bash
    cd dpdk/examples/gnb/
-   
 
 3. Compile the dpdk gNB app
    ```bash
@@ -35,6 +34,7 @@ Our implementation includes:
    sudo ./gnb run   -w 0000:67:08.0 -w 0000:67:08.1 -w 0000:67:08.2 -w 0000:67:08.3 -w 0000:67:08.4 -w 0000:67:08.5   -w 0000:67:08.6 -w 0000:67:08.7 -l 11-18  --proc-type primary --file-prefix=2 -m 3000 -- -p 0xff -q 4
 
 2. Run BaaS app as secondary app
+   ```bash
    sudo ./baas -l 13-15 --proc-type secondary --file-prefix=1
    
 ## Test
