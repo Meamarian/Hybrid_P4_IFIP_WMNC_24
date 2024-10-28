@@ -1,8 +1,9 @@
 # Utilizing Hybrid P4 Solutions to Enhance 5G gNB with Data Plane Programmability
 
 ## Description
+<div style="text-align: justify;">
 This repository provides a hybrid approach for implementing a 5G gNB (gNodeB) by utilizing both a P4-programmable SmartNIC and x86 server for data plane programmability. The solution leverages the low-latency processing of a SmartNIC for simpler packet tasks, while handling complex processing tasks on an x86 server with DPDK, which is better suited for functions like buffering and retransmission. This decomposition enhances throughput, scalability, and efficiency in 5G networks, enabling optimal use of diverse hardware capabilities.
-
+</div>
 Our implementation includes:
 - **P4 code**: For packet processing on SmartNIC.
 - **DPDK code**: For handling tasks on the x86 server.
