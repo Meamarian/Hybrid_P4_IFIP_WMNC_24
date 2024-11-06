@@ -6,3 +6,19 @@
    sudo nano nfp-hwdbg-srv2.service
 
 2. Run setup bash script
+
+
+
+## Important note
+
+Before load the SmartNIC module on Linux Server, check if the required parameters has specified on blacklist file of modprobe.d directory (/etc/modprobe.d/blacklist-netronome.conf). If not, create the file with this content bellow:
+
+```bash
+   sudo nano /etc/modprobe.d/blacklist-netronome.conf
+   
+   # This file is used to set the nfp module load parameters
+#blacklist the nfp_netvf module
+blacklist nfp_netvf
+
+# Disable netdev mode; implies cpp mode is enabled
+options nfp nfp_pf_netdev=0
