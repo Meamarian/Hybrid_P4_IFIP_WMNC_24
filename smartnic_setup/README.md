@@ -15,7 +15,9 @@ Before load the SmartNIC module on Linux Server, check if the required parameter
 
 ```bash
 sudo nano /etc/modprobe.d/blacklist-netronome.conf
-   
+```
+It should look like this:
+```bash   
 # This file is used to set the nfp module load parameters
 #blacklist the nfp_netvf module
 blacklist nfp_netvf
