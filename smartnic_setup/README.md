@@ -7,6 +7,7 @@
 
 2. Run setup bash script
 
+You can also run the service via the push_pifrte script. It pushes the firmware too at the same time.
 
 
 ## Important note
