@@ -24,6 +24,8 @@ blacklist nfp_netvf
 options nfp nfp_pf_netdev=0
 ```
 
-If this file does not exists, create then and, after this, run the follow command in order to update initramfs:
+If this file does not exists, create then and, after this, run the follow command to update initramfs:
 ```bash
 $ sudo update-initramfs -u
+
+After this procedure, the SmartNIC goes hidden on system, with no interfaces when doing a ifconfig like command. This is normal because the interfaces come up to the system via SR-IOV when a new firmware is uploaded into SmartNIC.
