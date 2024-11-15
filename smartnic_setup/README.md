@@ -32,3 +32,8 @@ If this file does not exists, create then and, after this, run the follow comman
 $ sudo update-initramfs -u
 ```
 After this procedure, the SmartNIC goes hidden on system, with no interfaces when doing a ifconfig like command. This is normal because the interfaces come up to the system via SR-IOV when a new firmware is uploaded into SmartNIC.
+
+How to see network cards pci addr
+```bash
+$ sudo lshw -class network -businfo
+```
