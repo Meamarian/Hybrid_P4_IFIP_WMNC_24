@@ -37,3 +37,9 @@ How to see network cards pci addr
 ```bash
 $ sudo lshw -class network -businfo
 ```
+
+If you want to kill the previous netronome service, use this cmd:
+```bash
+$ sudo pkill -f pif_rte
+```
+
