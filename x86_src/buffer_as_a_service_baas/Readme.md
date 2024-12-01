@@ -21,8 +21,11 @@ example:
 
 ```bash
 struct rte_hash* buffer_table
-uint32_t teid = rte_be_to_cpu_32(*(uint32_t *)(pkt_data + 14 + 20 + 8 + 4)); 
+
+uint32_t teid = rte_be_to_cpu_32(*(uint32_t *)(pkt_data + 14 + 20 + 8 + 4));
+
 struct packet_in_buffer_t* packet_in_bucket;
+
 int ret = rte_hash_lookup_data(buffer_table, &teid, (void **)&packet_in_bucket);
 ```
 
@@ -41,6 +44,7 @@ Example:
 
 ```bash
 struct rte_mbuf * m
+
 int ret = rte_hash_add_key_data(buffer_table, &teid, (void *)m);
 ```
 ## rte_hash_del_key
