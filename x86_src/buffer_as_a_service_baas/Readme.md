@@ -15,10 +15,7 @@ Define a pointer for the value (struct packet_in_buffer_t *packet_in_bucket) and
 Example:
 
 ```bash
-int rte_hash_lookup_data	(	const struct rte_hash * 	h,
-const void * 	key,
-void ** 	data 
-)	
+int rte_hash_lookup_data	(const struct rte_hash * h, const void * key, void ** data)	
 ```
 example: 
 
