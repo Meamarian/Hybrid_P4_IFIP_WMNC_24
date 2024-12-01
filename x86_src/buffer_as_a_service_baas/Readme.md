@@ -1,7 +1,7 @@
-## Pointers in DPDK Hash Table APIs
+# Pointers in DPDK Hash Table APIs
 The DPDK hash table functions require specific inputs to operate efficiently. Here’s how these inputs are defined and passed to the functions:
 
-# rte_hash_lookup_data
+## rte_hash_lookup_data
 What the function needs:
 
 A pointer to the hash table (struct rte_hash *buffer_table) to access the hash table in memory.
@@ -15,10 +15,12 @@ Define a pointer for the value (struct packet_in_buffer_t *packet_in_bucket) and
 Example:
 
 ```bash
+uint32_t teid = rte_be_to_cpu_32(*(uint32_t *)(pkt_data + 14 + 20 + 8 + 4)); 
+struct packet_in_buffer_t* packet_in_bucket;
 int ret = rte_hash_lookup_data(buffer_table, &teid, (void **)&packet_in_bucket);
 ```
 
-# rte_hash_add_key_data
+## rte_hash_add_key_data
 
 What the function needs:
 
@@ -32,9 +34,11 @@ Pass the address of the key (&teid) and cast the value pointer to void * when ca
 Example:
 
 ```bash
+uint32_t teid = rte_be_to_cpu_32(*(uint32_t *)(pkt_data + 14 + 20 + 8 + 4)); 
+struct rte_mbuf * m
 int ret = rte_hash_add_key_data(buffer_table, &teid, (void *)m);
 ```
-# rte_hash_del_key
+## rte_hash_del_key
 
 What the function needs:
 
@@ -47,5 +51,6 @@ Pass the hash table pointer and the address of the key (&teid) to the function.
 Example:
 
 ```bash
+uint32_t teid = rte_be_to_cpu_32(*(uint32_t *)(pkt_data + 14 + 20 + 8 + 4)); 
 int ret = rte_hash_del_key(buffer_table, &teid);
 ```
