@@ -62,3 +62,43 @@ Example:
 ```bash
 int ret = rte_hash_del_key(buffer_table, &teid);
 ```
+
+# Referencing and Dereferencing in C
+
+## Referencing
+Referencing means obtaining the memory address of a variable using the & operator.
+
+Example:
+
+```bash
+int x = 10;           // A variable x is created and assigned a value.
+int *ptr = &x;        // The `&` operator gets the address of x and assigns it to the pointer ptr.
+
+printf("Value of x: %d\n", x);          // Prints the value of x.
+printf("Address of x: %p\n", &x);      // Prints the address of x.
+printf("Value stored in ptr: %p\n", ptr);  // Prints the address of x, stored in ptr.
+```
+
+Key Points:
+&x gives the memory address of x.
+ptr is a pointer variable that stores the address of x.
+
+## Dereferencing
+Dereferencing means accessing the value stored at the memory address a pointer is pointing to, using the * operator.
+
+Example:
+
+```bash
+int x = 10;
+int *ptr = &x;        // ptr points to the address of x.
+
+printf("Value of x: %d\n", x);         // Prints 10.
+printf("Value via ptr: %d\n", *ptr);  // Dereferences ptr to get the value of x, prints 10.
+
+*ptr = 20;            // Modifies the value of x via the pointer.
+printf("Modified x: %d\n", x);        // Prints 20.
+```
+
+Key Points:
+*ptr accesses the value stored at the memory address ptr is pointing to.
+You can use dereferencing to read or modify the value of the variable indirectly.
