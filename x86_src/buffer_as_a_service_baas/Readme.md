@@ -102,3 +102,44 @@ printf("Modified x: %d\n", x);        // Prints 20.
 Key Points:
 *ptr accesses the value stored at the memory address ptr is pointing to.
 You can use dereferencing to read or modify the value of the variable indirectly.
+
+
+
+## diff of Operators dot and arrow (. and ->)
+
+Dot Operator (.):
+Use: Access members of an object or structure directly.
+Syntax: object.member or structure.member
+Requirement: The object or structure must not be a pointer. You are working with the actual instance.
+
+
+Arrow Operator (->):
+Use: Access members of an object or structure through a pointer.
+Syntax: pointer->member
+Requirement: The object or structure must be a pointer. The operator dereferences the pointer and accesses the member in one step.
+
+
+
+```bash
+#include <stdio.h>
+
+struct Point {
+    int x, y;
+};
+
+int main() {
+    struct Point p = {10, 20};
+    struct Point *ptr = &p;
+
+    // Dot operator
+    printf("Using . operator: x = %d, y = %d\n", p.x, p.y);
+
+    // Arrow operator
+    printf("Using -> operator: x = %d, y = %d\n", ptr->x, ptr->y);
+
+    // Explicit dereference with dot operator (equivalent to ->)
+    printf("Using (*ptr).x: x = %d, y = %d\n", (*ptr).x, (*ptr).y);
+
+    return 0;
+}
+```
