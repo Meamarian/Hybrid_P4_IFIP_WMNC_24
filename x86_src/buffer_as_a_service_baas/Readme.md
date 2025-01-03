@@ -105,7 +105,7 @@ You can use dereferencing to read or modify the value of the variable indirectly
 
 
 
-## diff of Operators dot and arrow (. and ->)
+## diff of dot and arrow Operators (. and ->)
 
 Dot Operator (.):
 
