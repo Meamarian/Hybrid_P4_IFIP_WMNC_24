@@ -108,14 +108,20 @@ You can use dereferencing to read or modify the value of the variable indirectly
 ## diff of Operators dot and arrow (. and ->)
 
 Dot Operator (.):
+
 Use: Access members of an object or structure directly.
+
 Syntax: object.member or structure.member
+
 Requirement: The object or structure must not be a pointer. You are working with the actual instance.
 
 
 Arrow Operator (->):
+
 Use: Access members of an object or structure through a pointer.
+
 Syntax: pointer->member
+
 Requirement: The object or structure must be a pointer. The operator dereferences the pointer and accesses the member in one step.
 
 
